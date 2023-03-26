@@ -1,0 +1,15 @@
+#Build settings
+theme: minima
+title: natTIDeveloper
+author:
+  name: nattdev
+description: 
+
+show_excerpts: true
+
+minima:
+  social_links:
+    github: nattdev
+
+defaults:
+  -
