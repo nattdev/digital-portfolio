@@ -1,9 +1,12 @@
- @import "minima";
+---
+---
 
- div {
+@import "{{ site.minima }}";
+
+div {
    border-collapse: collapse;
- }
+}
 
- .custom_header {
+.custom_header {
    border: 1px solid black;
- }
+}
