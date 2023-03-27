@@ -68,8 +68,6 @@ $table-header-bg-color: $lm-table-header-bg-color;
 $table-header-border: $lm-table-header-border;
 $table-border-color: $lm-table-border-color;
 
-$on-medium:        $on-palm !default;
-$on-large:         $on-laptop !default;
 $code-background-color: #fdfdfd !default;
 $code-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 $border-color-01: #2a7ae2 !default;
@@ -89,6 +87,10 @@ $content-width:    800px !default;
 
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
+
+
+$on-medium:        $on-palm !default;
+$on-large:         $on-laptop !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
