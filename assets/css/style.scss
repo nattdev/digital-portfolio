@@ -1,7 +1,6 @@
 ---
 ---
 
-@import "{{ site.theme }}";
-div {
-  color: red!important;
-}
+@import
+  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
+  "minima/initialize";
