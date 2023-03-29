@@ -260,8 +260,26 @@ table {
 }
 
 /*Custom styles*/
+body {
+	background: #FFF9E3;
+}
+
 .custom_header {
-  color: green;
   background: url("images/header_img.jpg");
+  height: 70vh;
+	width: 100%;
+	color: #ffffff;
+	border-radius: 20px;
+	border: 10px solid #FFF9E3;
+	background-size: cover;
+}
+
+.wrapper {
+	padding: 0;
+	margin: 0;	
+}
+
+.home {
+	padding: 5%;
 }
 
