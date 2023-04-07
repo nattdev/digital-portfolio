@@ -544,7 +544,7 @@ article {
 
   .custom-header {
     height: 74vh;
-    font-size: 10px;
+    font-size: 9px;
   }
 
   .custom-header__img {
@@ -569,7 +569,8 @@ article {
 @media screen and (max-width: 800px) {
 
   .custom-header,
-  .services {
+  .services,
+  .projects {
     font-size: 10px;
   }
 
@@ -585,6 +586,11 @@ article {
 
   .services__item {
     max-height: 25vh;
+  }
+
+  .projects__item {
+    width: 100%;
+    max-height: 60vh;
   }
 
   .about {
