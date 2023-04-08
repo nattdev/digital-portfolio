@@ -405,6 +405,7 @@ article {
   flex-wrap: wrap;
   position: relative;
   top: -165px;
+  margin-top: 20px;
 }
 
 .projects {
@@ -526,7 +527,8 @@ article {
 }
 
 .site-footer {
-  padding: 0 3em !important;
+  padding: 1em 3em !important;
+  text-align: center;
 }
 
 .home {
@@ -585,7 +587,7 @@ article {
   }
 
   .services__item {
-    max-height: 25vh;
+    max-height: 33vh;
   }
 
   .projects__item {
