@@ -304,9 +304,9 @@ body {
   padding: 70px 0 !important;
 }
 
-.page-link[href="/digital-portfolio/proyectos/"]{
-  display: none!important;
-}
+//.page-link[href="/digital-portfolio/proyectos/"]{
+//  display: none!important;
+//}
 
 article {
   padding-left: 3em !important;
@@ -375,8 +375,8 @@ article {
 
 .custom-header__main-text--regular:nth-last-of-type(1) {
   font-size: 2em;
-  text-indent: 4px;
-  margin-bottom: 30px;
+  padding: 0 4px;
+  margin-bottom: 20px;
 }
 
 .custom-header__button,
@@ -385,7 +385,7 @@ article {
   background-color: #333333;
   color: #ffffff !important;
   font-size: 1.2em;
-  padding: 0.3em 0.5em 0.5em;
+  padding: 0.5em;
   border-radius: 25px;
   width: fit-content;
   cursor: pointer;
@@ -541,6 +541,9 @@ article {
   font-weight: 700;
 }
 
+.footer-col {
+	float: initial!important;
+}
 
 @media screen and (max-width: 1000px) {
 
