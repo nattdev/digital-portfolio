@@ -381,7 +381,8 @@ article {
 
 .custom-header__button,
 .site-nav .page-link,
-.about__description-button {
+.about__description-button,
+.contact__description-button{
   background-color: #333333;
   color: #ffffff !important;
   font-size: 1.2em;
@@ -389,6 +390,8 @@ article {
   border-radius: 25px;
   width: fit-content;
   cursor: pointer;
+	border: none;
+	margin-top: 5px;
 }
 
 .custom-header__img {
@@ -508,7 +511,12 @@ article {
   white-space: pre-line;
 }
 
-.about__description-text span {
+.contact__description-text {
+	font-size: 1.5em;
+	white-space: pre-line;
+}
+
+.about__description-text span, .contact__description-text span {
   font-weight: 700;
 }
 
@@ -545,6 +553,29 @@ article {
 	float: initial!important;
 }
 
+.contact__form {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact__form label {
+	font-weight: 600;
+}
+
+.contact__form input {
+	height: 2em;
+	font-size: 1.1em;
+	padding: 2px;
+}
+
+.contact__form textarea[name="message"] {
+	height: 7em;
+	font-family: inherit;
+	font-size: 1.1em;
+	padding: 6px 2px;
+	resize: none;
+} 
+
 @media screen and (max-width: 1000px) {
 
   .custom-header {
@@ -558,12 +589,12 @@ article {
 
   .custom-header__button,
   .site-nav .page-link,
-  .about__description-button {
+  .about__description-button,
+	.contact__description-button	{
     font-size: 20px;
-		margin-top: 5px;
   }
 
-  .about__description-text {
+  .about__description-text, .contact__description-text {
     font-size: 1.5em;
   }
 
@@ -613,7 +644,7 @@ article {
     width: 100%;
   }
 
-  .about__description-text {
+  .about__description-text, .contact__description-text {
     font-size: 1.3em;
     width: 100%;
   }
@@ -629,7 +660,7 @@ article {
     font-size: 20px !important;
   }
 
-  .about__description-text {
+  .about__description-text, .contact__description-text {
     font-size: 1.4em;
   }
 
