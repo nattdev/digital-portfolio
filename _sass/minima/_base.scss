@@ -304,10 +304,6 @@ body {
   padding: 70px 0 !important;
 }
 
-//.page-link[href="/digital-portfolio/proyectos/"]{
-//  display: none!important;
-//}
-
 article {
   padding-left: 3em !important;
   padding-right: 3em !important;
@@ -325,6 +321,8 @@ article {
 
 .site-title {
   font-weight: 800 !important;
+	margin-top: 5px;
+  line-height: initial!important;	
 }
 
 .wrapper {
@@ -602,6 +600,10 @@ article {
 	width: 80%;
 	display: block;
 	margin: auto;
+}
+
+.post-header {
+	margin-top: 20px;
 }
 
 @media screen and (max-width: 1000px) {
