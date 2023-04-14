@@ -338,7 +338,7 @@ article {
 }
 
 .custom-header {
-  background: linear-gradient(45deg, #c1590063, transparent), url("images/header-img.jpg");
+  background: linear-gradient(45deg, #c1590063, transparent), url("images/design_images/header-img.jpg");
   height: 90vh;
   width: 100%;
   color: #ffffff;
@@ -557,7 +557,7 @@ article {
 	float: initial!important;
 }
 
-/**Contact Page**/
+/** Contact Page **/
 
 .contact__form {
 	display: flex;
@@ -582,7 +582,7 @@ article {
 	resize: none;
 } 
 
-/**Success-Message Page**/
+/** Success-Message Page **/
 
 .success-message__img {
 	width: 20%;
@@ -593,7 +593,15 @@ article {
 }
 
 .page-link[href="/success-message/"] {
-	display: none;
+	display: none!important;
+}
+
+/** Posts  **/
+
+.post-content img {
+	width: 80%;
+	display: block;
+	margin: auto;
 }
 
 @media screen and (max-width: 1000px) {
