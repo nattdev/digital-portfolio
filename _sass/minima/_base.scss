@@ -583,7 +583,8 @@ article {
 /** Success-Message Page **/
 
 .success-message__img {
-	width: 20%;
+	width: 20%!important;
+	margin-left: 0px!important;
 }
 
 .success-message__text {
