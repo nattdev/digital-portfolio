@@ -511,12 +511,16 @@ article {
   white-space: pre-line;
 }
 
-.contact__description-text {
+.contact__description-text,
+.success-message__text {
 	font-size: 1.5em;
 	white-space: pre-line;
 }
 
-.about__description-text span, .contact__description-text span {
+.about__description-text span,
+.contact__description-text span,
+.success-message__text span
+{
   font-weight: 700;
 }
 
@@ -553,6 +557,8 @@ article {
 	float: initial!important;
 }
 
+/**Contact Page**/
+
 .contact__form {
 	display: flex;
 	flex-direction: column;
@@ -575,6 +581,20 @@ article {
 	padding: 6px 2px;
 	resize: none;
 } 
+
+/**Success-Message Page**/
+
+.success-message__img {
+	width: 20%;
+}
+
+.success-message__text {
+	margin-top: 1em;
+}
+
+.page-link[href="/success-message/"] {
+	display: none;
+}
 
 @media screen and (max-width: 1000px) {
 
