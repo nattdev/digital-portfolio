@@ -613,7 +613,7 @@ article {
 }
 
 .post-link {
-	font-size: inherit;
+	font-size: inherit!important;
 	font-weight: 700;
 }
 
@@ -635,7 +635,7 @@ article {
     font-size: 20px;
   }
 
-  .about__description-text, .contact__description-text {
+  .about__description-text, .contact__description-text, .post-list {
     font-size: 1.5em;
   }
 
@@ -685,7 +685,7 @@ article {
     width: 100%;
   }
 
-  .about__description-text, .contact__description-text {
+  .about__description-text, .contact__description-text, .post-list {
     font-size: 1.3em;
     width: 100%;
   }
@@ -701,7 +701,7 @@ article {
     font-size: 20px !important;
   }
 
-  .about__description-text, .contact__description-text {
+  .about__description-text, .contact__description-text, .post-list {
     font-size: 1.4em;
   }
 
