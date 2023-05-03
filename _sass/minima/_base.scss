@@ -543,7 +543,7 @@ article {
 }
 
 .home {
-  padding: 0 40px !important;
+  padding: 0 28px !important;
 }
 
 .home::before {
@@ -669,6 +669,7 @@ article {
   .projects__item {
     width: 100%;
     max-height: 60vh;
+	margin: 20px 0;
   }
 
   .about {
