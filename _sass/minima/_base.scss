@@ -319,9 +319,10 @@ article {
   z-index: 1000;
 }
 
-.site-title {
+.site-title, .site-title:visited {
+  color: #1e1e1e;		
   font-weight: 800 !important;
-	margin-top: 5px;
+  margin-top: 5px;
   line-height: initial!important;	
 }
 
@@ -384,12 +385,13 @@ article {
   background-color: #333333;
   color: #ffffff !important;
   font-size: 1.5em;
-  padding: 0.3em;
+  padding: 3px 10px 6px!important;
   border-radius: 25px;
   width: fit-content;
   cursor: pointer;
 	border: none;
 	margin-top: 5px;
+	
 	
 }
 
