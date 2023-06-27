@@ -4,7 +4,7 @@ title: Proyectos
 permalink: /proyectos/
 ---
 
-This is the proyect page
+<p class="projects__description-text">Llevamos tus ideas al siguiente nivel. ¡Descubre nuestros proyectos y déjate inspirar!</p>
 
 
 <div class="projects">
