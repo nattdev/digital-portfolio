@@ -299,6 +299,10 @@ body {
   background: #FFF9E3;
 }
 
+.page-content {
+  padding: 118px 0 0!important;
+}
+
 article {
   padding-left: 3em !important;
   padding-right: 3em !important;
@@ -310,8 +314,14 @@ article {
   width: 100%;
   box-sizing: border-box;
   border-bottom: none !important;
+  border-top: none !important;
   padding-top: 0.5em;
   z-index: 1000;
+  background: #ffffff1f;
+  backdrop-filter: blur(1px);
+}
+.site-header a {
+  max-width: 95%;
 }
 
 .site-title,
@@ -624,10 +634,6 @@ article {
   width: 100%;
   display: block;
   margin: auto;
-}
-
-.post-header {
-  margin-top: 70px;
 }
 
 .post-list {
