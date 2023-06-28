@@ -59,7 +59,7 @@ ol,
 dl,
 figure,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: calc($spacing-unit / 2);
 }
 
 
@@ -161,7 +161,7 @@ a {
 blockquote {
   color: $grey-color;
   border-left: 4px solid $grey-color-light;
-  padding-left: $spacing-unit / 2;
+  padding-left: calc($spacing-unit / 2);
   @include relative-font-size(1.125);
   letter-spacing: -1px;
   font-style: italic;
@@ -209,8 +209,8 @@ pre {
   max-width: calc(#{$content-width} - (#{$spacing-unit}));
   margin-right: auto;
   margin-left: auto;
-  padding-right: $spacing-unit / 2;
-  padding-left: $spacing-unit / 2;
+  padding-right: calc($spacing-unit / 2);
+  padding-left: calc($spacing-unit / 2);
   @extend %clearfix;
 
   @media screen and (min-width: $on-large) {
@@ -300,10 +300,6 @@ body {
   background: #FFF9E3;
 }
 
-.page-content {
-  padding: 70px 0 !important;
-}
-
 article {
   padding-left: 3em !important;
   padding-right: 3em !important;
@@ -319,11 +315,12 @@ article {
   z-index: 1000;
 }
 
-.site-title, .site-title:visited {
-  color: #1e1e1e!important;		
+.site-title,
+.site-title:visited {
+  color: #1e1e1e !important;
   font-weight: 800 !important;
   margin-top: 5px;
-  line-height: initial!important;	
+  line-height: initial !important;
 }
 
 .wrapper {
@@ -359,6 +356,7 @@ article {
 .custom-header__main-text {
   position: relative;
   line-height: 1;
+  z-index: 500;
 }
 
 .custom-header__main-text--regular {
@@ -381,18 +379,22 @@ article {
 .custom-header__button,
 .site-nav .page-link,
 .about__description-button,
-.contact__description-button{
+.contact__description-button {
   background-color: #333333;
   color: #ffffff !important;
   font-size: 1.5em;
-  padding: 3px 10px 6px!important;
+  padding: 3px 10px 6px !important;
   border-radius: 25px;
   width: fit-content;
   cursor: pointer;
-	border: none;
-	margin-top: 5px;
-	
-	
+  border: none;
+  margin-top: 5px;
+}
+
+.contact__description-button {
+  font-size: 1em;
+  padding: 6px 10px !important;
+  border-radius: 20px;
 }
 
 .custom-header__img {
@@ -410,6 +412,7 @@ article {
   position: relative;
   top: -165px;
   margin-top: 20px;
+  justify-content: center;
 }
 
 .projects {
@@ -425,11 +428,13 @@ article {
   align-items: center;
   margin: 20px;
   box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.03);
   border-radius: 20px;
   overflow: hidden;
   border: 6px solid #ffffff;
   max-height: 500px;
+  text-align: center;
+  justify-content: center;
 }
 
 .services__item img,
@@ -445,20 +450,24 @@ article {
   font-weight: 700;
   font-size: 1.5em;
   margin-bottom: 0;
-  padding: 0.2em 0 0;
+  padding: 0.2em 0.5em;
+}
 
+.projects__item-text {
+  font-size: 1em;
 }
 
 .text-banner {
   background-color: #ffffff;
-  border: 10px solid #FFF9E3;
+  border: 1px solid rgb(108 108 108 / 7%);
   border-radius: 20px;
   color: #755637;
   font-weight: 700;
   font-size: 2.8em;
   padding: 1em 0.5em;
   position: relative;
-  top: -115px;
+  top: -95px;
+  margin: 0 0.5em;
 }
 
 .text-banner::after {
@@ -469,7 +478,7 @@ article {
   border-bottom: 100px solid #333333;
   border-left: 50px solid transparent;
   position: absolute;
-  bottom: 5px;
+  bottom: -12px;
   right: 0.5em;
 }
 
@@ -499,11 +508,16 @@ article {
 
 .about__img {
   width: 30%;
+  border-radius: 20px;
 }
 
 .about__description {
   padding: 40px;
   width: calc(70% - 80px);
+  background: #fff;
+  border-radius: 20px;
+  margin: 20px;
+  box-sizing: border-box;
 }
 
 .about__description-text {
@@ -513,15 +527,14 @@ article {
 }
 
 .contact__description-text,
-.success-message__text {
-	font-size: 1.5em;
-	white-space: pre-line;
+.success-message__text,
+.projects__description-text {
+  white-space: pre-line;
 }
 
 .about__description-text span,
 .contact__description-text span,
-.success-message__text span
-{
+.success-message__text span {
   font-weight: 700;
 }
 
@@ -529,9 +542,10 @@ article {
   content: "Conóceme";
   font-size: 4em;
   font-weight: 700;
-  position: absolute;
   top: -80px;
   right: 60px;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .post-link {
@@ -546,80 +560,95 @@ article {
 
 .home {
   padding: 0 28px !important;
+  margin-top: 60px;
 }
 
 .home::before {
   content: "Blog";
   font-size: 4em;
   font-weight: 700;
+  width: 100%;
+  display: block;
 }
 
 .footer-col {
-	float: initial!important;
+  float: initial !important;
 }
 
 /** Contact Page **/
 
 .contact__form {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact__form label {
-	font-weight: 600;
+  font-weight: 600;
 }
 
 .contact__form input {
-	height: 2em;
-	font-size: 1.1em;
-	padding: 2px;
+  height: 2em;
+  font-size: 1.1em;
+  padding: 2px;
 }
 
 .contact__form textarea[name="message"] {
-	height: 7em;
-	font-family: inherit;
-	font-size: 1.1em;
-	padding: 6px 2px;
-	resize: none;
-} 
+  height: 7em;
+  font-family: inherit;
+  font-size: 1.1em;
+  padding: 6px 2px;
+  resize: none;
+}
 
 /** Success-Message Page **/
 
 .success-message__img {
-	width: 20%!important;
-	margin-left: 0px!important;
+  width: 15% !important;
+  margin-left: 0px !important;
 }
 
 .success-message__text {
-	margin-top: 1em;
+  margin-top: 1em;
 }
 
 .page-link[href="/digital-portfolio/success-message/"] {
-	display: none!important;
+  display: none !important;
 }
 
 /** Posts  **/
+.post-content {
+  font-size: 1.3em;
+}
 
 .post-content img {
-	width: 80%;
-	display: block;
-	margin: auto;
+  width: 100%;
+  display: block;
+  margin: auto;
 }
 
 .post-header {
-	margin-top: 20px;
+  margin-top: 70px;
 }
 
 .post-list {
-	font-size: 2em;
+  font-size: 2em;
+  background: #fff;
+  border-radius: 20px;
+  padding: 1em;
+  box-sizing: border-box;
+  margin-top: 2em;
 }
 
 .post-link {
-	font-size: inherit!important;
-	font-weight: 700;
+  font-size: inherit !important;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 1000px) {
+
+  .home {
+    margin-top: 0;
+  }
 
   .custom-header {
     height: 74vh;
@@ -627,17 +656,27 @@ article {
   }
 
   .custom-header__img {
-    display: none;
+    height: 65%;
+    margin-left: 30px;
+  }
+
+  .services__item img {
+    max-height: 23vh;
   }
 
   .custom-header__button,
   .site-nav .page-link,
   .about__description-button,
-	.contact__description-button	{
+  .contact__description-button {
     font-size: 20px;
   }
 
-  .about__description-text, .contact__description-text, .post-list {
+  .text-banner {
+    font-size: 2.3em;
+  }
+
+  .about__description-text,
+  .post-list {
     font-size: 1.5em;
   }
 
@@ -649,9 +688,19 @@ article {
 @media screen and (max-width: 800px) {
 
   .custom-header,
-  .services,
-  .projects {
+  .services {
     font-size: 10px;
+  }
+
+  .projects {
+    font-size: 15px;
+  }
+
+  .custom-header__img {
+    position: absolute;
+    bottom: 24px;
+    right: 0;
+    height: 36%;
   }
 
   .text-banner {
@@ -664,6 +713,11 @@ article {
     border-left: 31px solid transparent;
   }
 
+  .services__item,
+  .projects__item {
+    margin: 20px 10px;
+  }
+
   .services__item {
     max-height: 33vh;
   }
@@ -671,11 +725,6 @@ article {
   .projects__item {
     width: 100%;
     max-height: 60vh;
-	margin: 20px 0;
-  }
-
-  .about {
-    padding: 0 0.5em 0.5em;
   }
 
   .about__img {
@@ -688,7 +737,9 @@ article {
     width: 100%;
   }
 
-  .about__description-text, .contact__description-text, .post-list {
+  .about__description-text,
+  .post-list,
+  .post-content {
     font-size: 1.3em;
     width: 100%;
   }
@@ -696,15 +747,33 @@ article {
   .about::before,
   .home::before {
     font-size: 3em;
+    text-align: center;
   }
 }
+
+@media screen and (max-width: 440px) {
+
+  .services__item,
+  .projects__item {
+    margin: 10px 10px;
+  }
+
+  .custom-header__img {
+    bottom: 40px;
+    height: 23%;
+  }
+
+}
+
+
 
 @media screen and (max-width: 370px) {
   .site-title {
     font-size: 20px !important;
   }
 
-  .about__description-text, .contact__description-text, .post-list {
+  .about__description-text,
+  .post-list {
     font-size: 1.4em;
   }
 
