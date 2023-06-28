@@ -300,7 +300,7 @@ body {
 }
 
 .page-content {
-  padding: 118px 0 0!important;
+  padding: 0!important;
 }
 
 article {
@@ -309,8 +309,7 @@ article {
 }
 
 .site-header {
-  padding: 0 3em;
-  position: absolute !important;
+  padding: 0.5em 3em!important;
   width: 100%;
   box-sizing: border-box;
   border-bottom: none !important;
