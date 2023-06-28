@@ -19,7 +19,6 @@ ul,
 figure {
   margin: 0;
   padding: 0;
-  margin-bottom: 15px;
 }
 
 
@@ -59,7 +58,7 @@ ol,
 dl,
 figure,
 %vertical-rhythm {
-  margin-bottom: calc($spacing-unit / 2);
+  margin-bottom: ($spacing-unit / 2);
 }
 
 
@@ -161,7 +160,7 @@ a {
 blockquote {
   color: $grey-color;
   border-left: 4px solid $grey-color-light;
-  padding-left: calc($spacing-unit / 2);
+  padding-left: ($spacing-unit / 2);
   @include relative-font-size(1.125);
   letter-spacing: -1px;
   font-style: italic;
@@ -209,8 +208,8 @@ pre {
   max-width: calc(#{$content-width} - (#{$spacing-unit}));
   margin-right: auto;
   margin-left: auto;
-  padding-right: calc($spacing-unit / 2);
-  padding-left: calc($spacing-unit / 2);
+  padding-right: ($spacing-unit / 2);
+  padding-left: ($spacing-unit / 2);
   @extend %clearfix;
 
   @media screen and (min-width: $on-large) {
@@ -509,6 +508,7 @@ article {
 .about__img {
   width: 30%;
   border-radius: 20px;
+  margin: 0 20px;
 }
 
 .about__description {
@@ -516,7 +516,7 @@ article {
   width: calc(70% - 80px);
   background: #fff;
   border-radius: 20px;
-  margin: 20px;
+  margin: 20px 0;
   box-sizing: border-box;
 }
 
@@ -765,16 +765,14 @@ article {
 
 }
 
-
-
 @media screen and (max-width: 370px) {
-  .site-title {
-    font-size: 20px !important;
+
+  .about, .home{
+    padding: 0 1em 2em!important;
   }
 
-  .about__description-text,
-  .post-list {
-    font-size: 1.4em;
+  .site-title {
+    font-size: 20px !important;
   }
 
   .services__item {
