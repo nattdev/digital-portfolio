@@ -4,7 +4,7 @@ title: Proyectos
 permalink: /proyectos/
 ---
 
-<p class="projects__description-text">Llevamos tus ideas al siguiente nivel. ¡Descubre nuestros proyectos y déjate inspirar!</p>
+<p class="projects__description-text">Llevamos tus ideas al siguiente nivel. <span>¡Descubre nuestros proyectos y déjate inspirar!</span></p>
 
 
 <div class="projects">

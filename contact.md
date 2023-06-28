@@ -4,7 +4,7 @@ title: Contacto
 permalink: /contacto/
 ---
 <div class="contact">
-<p class="contact__description-text">Si tienes preguntas o deseas solicitar un presupuesto para tu proyecto, por favor completa el formulario de contacto que aparece a continuación y me pondré en contacto contigo a la brevedad posible.
+<p class="contact__description-text"><span>Si tienes preguntas</span> o <span>deseas solicitar un presupuesto para tu proyecto</span>, por favor completa el formulario de contacto que aparece a continuación y me pondré en contacto contigo a la brevedad posible.
 
 <span>¡Espero trabajar contigo pronto!</span></p>
 
