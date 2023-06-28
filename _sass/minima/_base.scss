@@ -542,9 +542,14 @@ article {
 }
 
 .about__description-text span,
-.contact__description-text span,
-.success-message__text span {
+.contact__description-text span {
   font-weight: 700;
+}
+
+.success-message__text span,
+.projects__description-text span,
+.contact__description-text span {
+  font-weight: 500;
 }
 
 .about::before {
@@ -627,6 +632,12 @@ article {
 /** Posts  **/
 .post-content {
   font-size: 1.3em;
+  background: #ffffffc2;
+  padding: 3px;
+  outline: 3px solid #fff;
+  border-radius: 20px;
+  border: 9px solid #fffdf6;
+  box-sizing: border-box;
 }
 
 .post-content img {
@@ -761,6 +772,10 @@ article {
   .services__item,
   .projects__item {
     margin: 10px 10px;
+  }
+
+  .text-banner {
+    font-size: 1.7em;
   }
 
   .custom-header__img {
