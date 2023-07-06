@@ -482,11 +482,12 @@ article {
   width: 100%;
 }
 
-.services__item p{
+.services__item p {
   padding: 0.2em 0.5em;
 }
 
-.projects__item a:hover > img, p{
+.projects__item a:hover>img,
+p {
   opacity: 0.90;
 }
 
@@ -497,8 +498,9 @@ article {
   margin: 0.2em auto;
 }
 
-.services__item-description, .projects__item-description {
-  font-size: 1.2em;
+.services__item-description,
+.projects__item-description {
+  font-size: 1.2rem;
 }
 
 .text-banner {
@@ -670,7 +672,7 @@ article {
 /** Posts  **/
 .post-content {
   font-size: 1.3em;
-  background: #ffffffc2;
+  background: #ffffff6e;
   padding: 3px;
   outline: 3px solid #fff;
   border-radius: 20px;
@@ -807,9 +809,19 @@ article {
 
 @media screen and (max-width: 440px) {
 
-  .services__item,
-  .projects__item {
+  .services__item {
     margin: 10px 10px;
+    width: calc(50% - 20px);
+  }
+
+  .services__item-title,
+  .projects__item-title {
+    font-size: 1.3rem;
+  }
+
+  .services__item-description,
+  .projects__item-description {
+    font-size: 1rem;
   }
 
   .text-banner {
