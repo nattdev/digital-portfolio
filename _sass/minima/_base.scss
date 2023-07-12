@@ -416,10 +416,11 @@ article {
 
 .custom-header__img {
   padding: 0 1em;
-  height: 80%;
+  height: 60%;
   animation-name: identifier;
   animation-duration: 5s;
   animation-iteration-count: infinite;
+  opacity: 0.90;
 }
 
 .services,
@@ -471,6 +472,8 @@ article {
 
 .services__item img {
   object-position: center;
+  height: 35vh;
+  filter: saturate(0.9);
 }
 
 .projects__item a {
