@@ -17,7 +17,7 @@ permalink: /proyectos/
     <div class="projects__item">
         <a href="https://frutasabia.com/"><img src="../assets/images/design_images/project6.jpg" alt="#">
         <p class="projects__item-title">Alimentación Saludable</p>
-        <p class="projects__item-description">Crea una presencia en línea profesional y sólida para tu empresa con una página corporativa.</p>
+        <p class="projects__item-description">Convierte tus ideas en artículos con un blog informativo.</p>
         </a>
     </div>
     <div class="projects__item">
