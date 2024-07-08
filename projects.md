@@ -45,3 +45,28 @@ permalink: /proyectos/
         </a>
     </div>
 </div>
+
+<p class="projects__description-text">Descubre más plantillas para diversos servicios</p>
+
+<div class="projects">
+    <div class="projects__item">
+        <a href="https://propuesta-web-envios.blogspot.com/"><img src="../assets/images/design_images/template1.jpg" alt="#">
+        <p class="projects__item-title">Envíos</p>
+        </a>
+    </div>
+        <div class="projects__item">
+        <a href="https://demo-web-adoptions.blogspot.com/"><img src="../assets/images/design_images/template2.jpg" alt="#">
+        <p class="projects__item-title">Adopción de Mascotas</p>
+        </a>
+    </div>
+        <div class="projects__item">
+        <a href="https://demo-comidas-ham.blogspot.com/"><img src="../assets/images/design_images/template3.jpg" alt="#">
+        <p class="projects__item-title">Restaurantes</p>
+        </a>
+    </div>
+        <div class="projects__item">
+        <a href="https://demo-dis-interiores-v2.blogspot.com/"><img src="../assets/images/design_images/template4.jpg" alt="#">
+        <p class="projects__item-title">Diseño de Interiores</p>
+        </a>
+    </div>
+</div>
