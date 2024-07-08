@@ -15,7 +15,7 @@ permalink: /proyectos/
         </a>
     </div>
     <div class="projects__item">
-        <a href="https://frutasabia.com/"><img src="../assets/images/design_images/project6.jpg" alt="#">
+        <a href="https://frutasabia.blogspot.com/"><img src="../assets/images/design_images/project6.jpg" alt="#">
         <p class="projects__item-title">Alimentación Saludable</p>
         <p class="projects__item-description">Convierte tus ideas en artículos con un blog informativo.</p>
         </a>
