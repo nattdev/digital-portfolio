@@ -46,7 +46,7 @@ permalink: /proyectos/
     </div>
 </div>
 
-<p class="projects__description-text">Descubre más plantillas para diversos servicios</p>
+<p class="projects__description-text"><span>¡Descubre más plantillas!</span></p>
 
 <div class="projects">
     <div class="projects__item">
