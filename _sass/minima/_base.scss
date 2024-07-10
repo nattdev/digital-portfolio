@@ -687,6 +687,9 @@ p {
   width: 100%;
   display: block;
   margin: auto;
+  height: 600px;
+  object-fit: cover;
+  object-position: top right;
 }
 
 .post-list {
