@@ -759,7 +759,7 @@ p {
 }
 
 @media screen and (max-width: 800px) {
-
+  
   .custom-header,
   .services {
     font-size: 10px;
@@ -822,6 +822,11 @@ p {
 
 @media screen and (max-width: 440px) {
 
+  article {
+      padding-left: 1em !important;
+      padding-right: 1em !important;
+  }
+  
   .services__item {
     margin: 10px 10px;
     width: calc(50% - 20px);
