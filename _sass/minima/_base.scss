@@ -299,6 +299,11 @@ body {
   background: #FFF9E3;
 }
 
+.site-nav .page-link:not(:last-child){
+      margin-right: 5px!important;
+}
+
+
 .page-content {
   padding: 0 !important;
 }
@@ -317,7 +322,7 @@ article {
 }
 
 .site-header {
-  padding: 0.5em 3em !important;
+  padding: 0.5em 17px !important;
   width: 100%;
   box-sizing: border-box;
   border-bottom: none !important;
