@@ -358,6 +358,7 @@ article {
 .custom-header {
   /*background: linear-gradient(45deg, #c1590063, transparent), url("images/design_images/header-img.jpg");*/
   background: #dd9725;
+  background-image: url("images/design_images/header-img.jpg");
   height: 90vh;
   width: 100%;
   color: #ffffff;
@@ -374,13 +375,6 @@ article {
   top: -85px;
   z-index: auto;
   align-items: center;
-}
-
-.custom-header__background {
-  position: absolute;
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
 }
 
 .custom-header__main-text {
